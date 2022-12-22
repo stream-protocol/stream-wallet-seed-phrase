@@ -1,0 +1,23 @@
+{
+    "name": "stream-wallet-seed-phrase",
+    "version": "0.2.0",
+    "description": "Utilities to work with Stream Protocol key pairs based on seed phrases ",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "test": "mocha",
+        "dist": "browserify browser-exports.js -i node-fetch -i http -i https -o dist/stream-wallet-seed-phrase.js && browserify browser-exports.js -i node-fetch -g uglifyify -o dist/stream-seed-phrase.min.js"
+    },
+    "types": "types.d.ts",
+    "dependencies": {
+        "bip39-light": "^1.0.7",
+        "bs58": "^4.0.1",
+        "stream-hd-key": "^1.2.1",
+        "tweetnacl": "^1.0.2"
+    },
+    "devDependencies": {
+        "browserify": "^17.0.0",
+        "mocha": "^8.1.3",
+        "uglifyify": "^5.0.2"
+    }
+}

@@ -1,0 +1,1 @@
+window.streamSeedPhrase = require('./index');
